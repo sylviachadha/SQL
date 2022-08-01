@@ -21,7 +21,7 @@ SELECT * FROM payment;
 finding distinct values in a column using DISTINCT*/
 SELECT customer_id FROM payment
 GROUP BY customer_id
-ORDER BY customer_id ASC;
+ORDER BY customer_id;
 
 
 /*Groupby useful with aggregation*/
@@ -76,26 +76,5 @@ FROM payment
 GROUP BY customer_id
 ORDER BY SUM(amount) DESC
 LIMIT 5;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
