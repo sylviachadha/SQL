@@ -22,6 +22,7 @@ LEFT JOIN inventory ON
 inventory.film_id = film.film_id;
 
 
+/* To find exclusive rows in table A */
 SELECT film.film_id, title, inventory_id, store_id
 FROM film     -- all records from film, film is left table
 LEFT JOIN inventory ON
