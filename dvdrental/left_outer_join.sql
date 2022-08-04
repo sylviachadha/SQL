@@ -1,11 +1,15 @@
 /* Left Outer Join*/
 /* 1. Left Outer join results in a set of records that
-are in left table. if there is no match with right table,
+are in left table. If there is no match with right table,
 the results are null.
 So rows common in both tables or rows exclusive to table A
 will be returned while rows exclusive to table B will not be
 returned.
 2. It is a non-symmetrical join, so order will matter.
+3. Syntax- (Table A is left table)
+SELECT * FROM Table A
+LEFT OUTER JOIN Table B
+ON TableA.col_match = TableB.col_match
  */
 
 
