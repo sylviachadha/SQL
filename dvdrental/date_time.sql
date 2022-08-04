@@ -1,0 +1,13 @@
+/* Some Special Date and Time Functions */
+
+SHOW ALL;
+
+SHOW TIMEZONE;
+
+SELECT NOW();
+
+SELECT TIMEOFDAY();
+
+SELECT CURRENT_TIME;
+
+SELECT CURRENT_DATE;
