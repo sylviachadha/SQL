@@ -56,3 +56,30 @@ ORDER BY customer_id DESC
 LIMIT 1;
 
 
+/* Q10- What are emails of customers who live in California? */
+
+SELECT * FROM customer;
+SELECT * FROM address;
+
+SELECT email,district
+FROM customer
+INNER JOIN address
+ON customer.address_id = address.address_id
+WHERE district='California';
+
+
+/* Q11 - Get a list of all movies 'Nick Wahlberg' has been in ? */
+
+SELECT * FROM film;
+SELECT * FROM actor;
+SELECT * FROM film_actor;
+
+SELECT title,first_name, last_name
+FROM film_actor
+INNER JOIN film
+ON film.film_id = film_actor.film_id
+INNER JOIN actor
+ON actor.actor_id = film_actor.actor_id
+WHERE first_name = 'Nick' AND last_name = 'Wahlberg';
+
+
