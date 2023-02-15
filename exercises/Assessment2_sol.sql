@@ -135,12 +135,3 @@ ON cd.members.memid = cd.bookings.memid
 WHERE firstname = 'David' AND surname = 'Farrell';
 
 
-
-
-
-
-
-
-
-
-
